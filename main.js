@@ -1,28 +1,21 @@
 const slideShowItems  = document.querySelectorAll(".slideShowItem");
+const body = document.querySelector("body");
+const carousel = document.querySelector(".slideShow");
 
 
-let currentSlideShowIndex = 0;
 
-enableSlide(currentSlideShowIndex);
+    let currentSlideShowIndex = 0;
+    carousel.scrollTo(0, 0);
 
-function enableSlide(passedIndex){
-    slideShowItems.forEach((element) => {
-        element.style.display = "none";
-    }
-    )
-    slideShowItems[passedIndex].style.display = "flex";
-}
-
-
-function navigateSlideShow() {
+function navigateCarousel() {
     currentSlideShowIndex++;
-    if(currentSlideShowIndex > slideShowItems.length - 1){
+    if(currentSlideShowIndex == slideShowItems.length) {
+        carousel.scrollTo(0, 0);
         currentSlideShowIndex = 0;
+    } else {
+        carousel.scrollBy(window.innerWidth, 0);
     }
-    enableSlide(currentSlideShowIndex);
-
-
     
 }
 
-setInterval(navigateSlideShow, 4000)
+setInterval(navigateCarousel, 5000)

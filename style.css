@@ -41,7 +41,29 @@ body{
     font-style: normal;
 }
 
+h2{
+    font-size:3rem;
+    color:#C59A2B;
+    width:100%;
+    text-align:center;
+    margin:1vw;
+}
 
+
+main{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    
+}
+
+footer{
+    height:0px;
+    background-color: rgb(218, 162, 50);
+}
+
+/* HEADER */
 
 h1{
     position:absolute;
@@ -94,16 +116,21 @@ h1{
     
 }
 
+/* NEW RECIPES */
+
 #new-recipes{
     display:flex; 
     justify-content: center;
     flex-wrap:wrap;
+    flex-basis:100%;
+    
 }
 
 .recipe-box{
+    min-width: 650px;
+    width:55%;
     
-    border:#C59A2B 3px solid; 
-    width:100%;
+    border:#c59a2b 3px solid; 
     border-radius:1vw;
     box-sizing: border-box;
     display:flex;
@@ -111,11 +138,12 @@ h1{
     margin-bottom:30px;
 }
 
-.recipe-box-text{
+.recipe-box div{
     margin:3%;
     display:flex;
     flex-wrap:wrap;
     align-items: center;
+    width:60%;
 }
 
 .recipe-box h3{
@@ -130,11 +158,12 @@ h1{
 
 .recipe-box img{
     grid-area:img;
-    width:100%;
+    /* width:100%; */
     border-radius:0 0.8vw 0.8vw 0;
-    height:inherit;
+    /* height:inherit; */
     object-fit:cover;
-    min-width: 200px;
+    width:40%;
+    max-height:300px;
 }
 
 .recipe-box a{
@@ -143,31 +172,13 @@ h1{
     margin-top:0;
 }
 
-h2{
-    font-size:3rem;
-    color:#C59A2B;
-    width:100%;
-    text-align:center;
-    margin:1vw;
-}
 
-h3{
-    width:70%;
-}
-
-main{
-    width:50%;
-    min-width: 650px;
-}
-
-footer{
-    height:0px;
-    background-color: rgb(218, 162, 50);
-}
+/* CATEGORIES */
 
 
 
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 700px) {
     main{
         width:100%;
         min-width: 0px;
@@ -178,11 +189,16 @@ footer{
     }
 
     .recipe-box{
+        min-width:0;
         height:auto;
         object-fit:none;
         width:80%;
         border-radius:3vw;
         flex-wrap:wrap;
+    }
+
+    .recipe-box div{
+        width:100%;
     }
 
     .recipe-box h3{
@@ -191,6 +207,6 @@ footer{
 
     .recipe-box img{
         border-radius:0 0 2.5vw 2.5vw;
-        min-width:0px;
+        width:100%;
     }
 }

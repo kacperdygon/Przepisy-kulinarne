@@ -1,39 +1,19 @@
-const slideShowItems  = document.querySelectorAll(".slideShowItem");
+const slideshowItems  = document.querySelectorAll(".slideshow-item");
 const body = document.querySelector("body");
-const carousel = document.querySelector(".slideShow");
-const navUl = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
-const navHamburger = document.querySelector("nav img");
+const headerSlideshow = document.querySelector("#slideshow");
 
-let isNavOpen = false;
-navHamburger.addEventListener("click", alterNav)
+    let currentHeaderSlideshowIndex = 0;
+    headerSlideshow.scrollTo(0, 0);
 
-navUl.style.left = "-200%";
-
-
-    let currentSlideShowIndex = 0;
-    carousel.scrollTo(0, 0);
-
-function navigateCarousel() {
-    currentSlideShowIndex++;
-    if(currentSlideShowIndex == slideShowItems.length) {
-        carousel.scrollTo(0, 0);
-        currentSlideShowIndex = 0;
+function navigateHeaderSlideshow() {
+    currentHeaderSlideshowIndex++;
+    if(currentHeaderSlideshowIndex >= slideshowItems.length) {
+        headerSlideshow.scrollTo(0, 0);
+        currentHeaderSlideshowIndex = 0;
     } else {
-        carousel.scrollBy(window.innerWidth, 0);
+        headerSlideshow.scrollBy(window.innerWidth, 0);
     }
     
 }
 
-function alterNav(){
-    if (isNavOpen){
-        navUl.style.left = "-200%";
-        isNavOpen = false;
-    } else {
-        navUl.style.left = "5px";
-        isNavOpen = true;
-    }
-    
-}
-
-setInterval(navigateCarousel, 5000)
+setInterval(navigateHeaderSlideshow, 5000);

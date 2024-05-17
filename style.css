@@ -53,7 +53,7 @@ body{
 h2{
     width:100%;
     font-size:3rem;
-    color:#C59A2B;
+    color:#a58125;
     width:100%;
     text-align:center;
     margin:1vw;
@@ -148,7 +148,7 @@ footer{
     min-width: 650px;
     width:55%;
     
-    border:#c59a2b 3px solid; 
+    border:#a58125 3px solid; 
     border-radius:1vw;
     box-sizing: border-box;
     display:flex;
@@ -192,9 +192,9 @@ footer{
 }
 
 #new-recipes .button{
-    /* border:#c59a2b 3px solid;  */
+    /* border:#a58125 3px solid;  */
     box-sizing: border-box;
-    background-color:#c59a2b ;
+    background-color:#a58125 ;
     border-radius:1rem;
     padding:1rem;
     font-size:1.3rem;
@@ -287,7 +287,7 @@ footer{
     width:40%;
     margin:15px 1.5% 15px 1.5%;
     display:flex;
-    outline:#c59a2b 3.5px solid; 
+    outline:#a58125 3.5px solid; 
     border-radius:10px;
     /* box-sizing: border-box; */
     overflow: hidden;
@@ -347,7 +347,7 @@ footer{
     text-align: left;
     margin:0;
     margin-bottom: 5%;
-    color:gray;
+    color:rgb(65, 65, 65);
 }
 
 .category-recipe-box a{
@@ -363,7 +363,7 @@ footer{
 .subpage-header{
     width:100%;
     text-align: center;
-    background-color: #C59A2B;
+    background-color: #a58125;
     font-size: 1.8rem;
 }
 
@@ -400,7 +400,7 @@ footer{
 
 .recipe-title p{
     margin:0;
-    color:#7c7c7c;
+    color:rgb(65, 65, 65);
     font-size:1.5rem;
 }
 
@@ -508,7 +508,7 @@ footer{
 .recipe-step{
     width:100%;
     display:flex;
-    outline:#c59a2b 3.5px solid; 
+    outline:#a58125 3.5px solid; 
     border-radius:10px;
     margin:20px 0 20px 0;
 }
@@ -541,6 +541,36 @@ footer{
     aspect-ratio: 1;
     object-fit:cover;
     height:100%;
+}
+
+
+.recipe-nutritional-value{
+width:100%;
+display:flex;
+align-items: center;;
+flex-direction: column;
+margin-bottom:5vh
+    
+
+}
+
+.recipe-nutritional-value table{
+    width:40%;
+    text-align:left;
+}
+
+.recipe-nutritional-value th, .recipe-nutritional-value td, .recipe-nutritional-value table{
+    border: #a58125 solid 2px;
+    border-collapse: collapse;
+    /* width:100%; */
+}
+
+.recipe-nutritional-value th, .recipe-nutritional-value td{
+    padding:5px;    
+}
+
+.recipe-nutritional-value td{
+    text-align: right;
 }
 
 

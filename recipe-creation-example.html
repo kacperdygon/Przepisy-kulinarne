@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tworzenie przepisu - Przepisy kulinarne</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav><a href="index.html">Powrót</a></nav>
+        <header class="subpage-header">
+            <a href="index.html"><h1>Przepisy kulinarne</h1></a>
+            
+        </header>
+        <main class="container40">
+            
+            <h2>Dodaj przepis</h2>
+            <form action="">
+
+                <section class="basic-info-edit-section">
+                    <div>
+                        <div class="time-edit">
+                            <img src="img/other/clock-icon.png" alt="">
+                            <input type="num"  name="time">
+                            &nbsp;min
+                        </div>
+                        <div class="portion-amount-edit">
+                            <img src="img/other/person-icon.png" alt="">
+                            <input type="num"  name="time">
+                            &nbsp;porcje
+                        </div>
+                    </div>
+                    
+                    <div class="categories-edit">
+                        <h3>Kategorie</h3>
+                        <input type="text" name="" id="" readonly>
+                        <a href="">Dodaj więcej</a>
+                    </div>
+                </section>
+                
+                
+                <section class="images-edit-section">
+                    <h3>Dodaj zdjęcie</h3>
+                    <input type="file">
+                </section>
+
+                <section class="description-ingredients-edit-section">
+                    <div>
+                        <h3>Opis</h3>
+                        <textarea name="description" id=""></textarea>
+                    </div>
+                    <div>
+                        <h3>Składniki</h3>
+                        <textarea name="ingredients" id=""></textarea>
+                    </div>
+
+                </section>
+
+                <section class="steps-edit-section">
+                    <div class="step">
+                        <div>
+                            <h3>Krok 1: </h3>
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        
+                        <div>
+                            <h4>Dodaj zdjęcie
+                                <input type="file">
+                            </h4>
+                            
+                            <div class="delete-step-button">Usuń krok</div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="add-step-button">
+                        <p class="prevent-select">Dodaj krok +</p>
+                    </div>
+                </section>
+
+                <input type="submit" value="Zakończ tworzenie przepisu">
+
+                
+            </form>
+
+
+        </main>
+        <footer></footer>
+
+        <script src="recipe-creation.js"></script>
+
+    </div>
+    
+</body>
+</html>

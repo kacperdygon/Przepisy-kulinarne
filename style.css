@@ -33,8 +33,32 @@
     
 }
 
+.container30{
+    width: 30%;
+    min-width:650px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.container40{
+    width: 40%;
+    min-width:650px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
 .container50{
     width: 50%;
+    min-width:650px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.container60{
+    width:60%;
     min-width:650px;
     display:flex;
     flex-wrap:wrap;
@@ -74,6 +98,23 @@ footer{
     width:100%;
     background-color: rgb(218, 162, 50);
     margin-top:20px;
+}
+
+nav{
+    text-align: left;
+    color:white;
+    position:absolute;
+    top:0;
+    left:0;
+
+    
+}
+
+nav > a{
+    color:white;
+    margin-left:10px;
+    text-decoration: underline;
+    font-size:2rem;
 }
 
 
@@ -130,6 +171,19 @@ footer{
 
     
     
+}
+
+#home-page-recipe-creation{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+#home-page-recipe-creation .button{
+    font-size:3rem;
+    margin:10%;
 }
 
 /* NEW RECIPES */
@@ -191,7 +245,7 @@ footer{
     text-decoration:none;
 }
 
-#new-recipes .button{
+main .button{
     /* border:#a58125 3px solid;  */
     box-sizing: border-box;
     background-color:#a58125 ;
@@ -574,6 +628,208 @@ margin-bottom:5vh
 }
 
 
+.basic-info-edit-section{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between  ;
+}
+
+.basic-info-edit-section > div:first-of-type{
+    display:flex;
+    flex-wrap:wrap;
+    width:45%;
+}
+
+.time-edit, .portion-amount-edit{
+    display:flex;
+    width:100%;
+    align-items: center;
+    margin-bottom:1rem;
+}
+
+.time-edit input, .portion-amount-edit input{
+    padding:2%;
+    border-radius:0.5rem;
+    border:0;
+    /* border:2px solid gray; */
+    height:35%;
+    background-color: lightgray;
+    width:10%;
+    text-align: center;
+    font-size:1.5rem;
+}
+
+.time-edit img, .portion-amount-edit img{
+    width:4rem;
+    margin-right:1rem;
+}
+
+.categories-edit{
+    display:flex;
+    flex-direction: column;
+    width:45%;
+}
+
+.categories-edit input{
+    width:100%;
+    box-sizing: border-box;
+}
+
+.categories-edit h3{
+    font-size:1.5rem;
+    margin: 10% 0 5% 0;
+}
+
+.categories-edit a{
+    margin: 3% 0 5% 0;
+    width:100%;
+    text-align: right;
+    align-self:end;
+}
+
+.images-edit-section{
+    font-size:1.3rem;
+}
+
+.description-ingredients-edit-section{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.description-ingredients-edit-section > div{
+    width:45%;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.description-ingredients-edit-section h3{
+    font-size:1.5rem;
+}
+
+.description-ingredients-edit-section textarea{
+    width:100%;
+    background-color: lightgray;
+    border:0;
+    border-radius:0.5rem;
+    font-size:1rem;
+    padding:0.5rem;
+    resize:none;
+    height:30vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    justify-self: center;
+    box-sizing: border-box;
+}
+
+
+.description-ingredients-edit-section textarea:focus{
+    border:0;
+    outline:0;
+    
+}
+
+.steps-edit-section > *{
+    width:100%;
+    margin:5% 0 5% 0;
+}
+
+.step{
+    width:100%;
+    display:flex;
+    /* justify-content: center; */
+    border:3px #a58125 solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding:10px;
+    /* background-color: #D4D4D4; */
+}
+
+.step > div{
+    box-sizing: border-box;
+}
+
+.step > div:first-of-type{
+    width:75%;
+}
+
+.step > div:last-of-type{
+    width:25%;
+    /* height:100%; */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;;
+}
+
+.step h3{
+    margin:2% 0 2% 0;
+}
+
+.step .delete-step-button{
+    width:100%;
+    background-color: red;
+    color:white;
+    border:0;
+    padding:10px;
+    border-radius:10px;
+    font-size:1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    cursor:pointer;
+    text-align:center;
+    box-sizing: border-box;
+}
+
+
+.step textarea{
+    background-color: lightgray;
+    border:0;
+    border-radius:0.5rem;
+    font-size:1rem;
+    padding:0.5rem;
+    resize:none;
+    width:95%;
+    box-sizing: border-box;
+    height:12vh;
+}
+
+.add-step-button{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    border:3px #a58125 solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding:10px;
+    background-color: #d8d8d8;
+    cursor:pointer;
+}
+
+form > input{
+    /* width:30%; */
+    align-self:center;;
+    padding:1rem;
+    font-size:1.3rem;
+    border-radius:10px;
+    border:0;
+    background-color: #a58125;
+    color:white;
+    font-weight: 600;
+    width:fit-content;
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+
 
 @media screen and (max-width: 700px) {
 
@@ -583,6 +839,19 @@ margin-bottom:5vh
 
     .container50{
         width:100%;
+        min-width: 0;
+    }
+
+    .container40{
+        min-width: 0;
+        width:90%
+    }
+
+    .container30{
+        min-width: 0;
+    }
+
+    .container60{
         min-width: 0;
     }
     
@@ -665,6 +934,26 @@ margin-bottom:5vh
     .recipe-slideshow button:last-of-type{
         right:7%;
     }
+
+
+
+    .description-ingredients-edit-section{
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .description-ingredients-edit-section div{
+        width:100%;
+    }
+
+    .basic-info-edit-section{
+        flex-wrap:wrap;
+    }
+
+    .basic-info-edit-section > div{
+        width:100%;
+    }
+
 
 }
 
